@@ -1,6 +1,6 @@
+<!--
 ## Hi there 👋
 
-<!--
 **jcmertens/jcmertens** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -14,3 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Moin/Hello, this is the GitHub profile of Merten Schumann.
+
+I'm interested in developing solutions in Java and/or in RPL, the Rochade procedure language.
+
+I'm available for contract work. Remote or daheme in Chemnitz, nor.
