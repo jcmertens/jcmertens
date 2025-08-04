@@ -15,8 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-Moin/Hello, this is the GitHub profile of Merten Schumann.
+Moin/Hello, this is the GitHub profile of Merten Schumann. :-)
 
-I'm interested in developing solutions in Java and/or in RPL, the Rochade procedure language.
+I'm interested in developing software solutions in Java and/or in RPL, the Rochade procedure language for the Rochade repository.
 
 I'm available for contract work. Remote or daheme in Chemnitz, nor.
