@@ -1,0 +1,449 @@
+" Vim syntax file
+" Language:	RPL   Rochade procedure language
+" Maintainer:	Merten Schumann   jcmertens@gmx.de
+" R&O / Viasoft / ASG / Rocket / Hossa
+
+"TODO if usw. erscheint noch als Statement, wenn es als Parameter auftaucht
+
+syn clear
+
+" todo
+syn keyword rplTodo contained TODO XXX
+
+" data
+"syn match rplData "^[^#;].*"
+
+" keywords
+syn case ignore
+
+ syn match rplCommand +#$XGETID$+
+ syn match rplCommand +#$XGETID\s+
+ syn match rplCommand +#$ADD1$+
+ syn match rplCommand +#$ADD1\s+
+ syn match rplCommand +#$APPEND$+
+ syn match rplCommand +#$APPEND\s+
+ syn match rplCommand +#$BLOB$+
+ syn match rplCommand +#$BLOB\s+
+ syn match rplCommand +#$BROWSE$+
+ syn match rplCommand +#$BROWSE\s+
+ syn match rplCommand +#$CALC$+
+ syn match rplCommand +#$CALC\s+
+ syn match rplCommand +#$CALL$+
+ syn match rplCommand +#$CALL\s+
+ syn match rplCommand +#$CDOC$+
+ syn match rplCommand +#$CDOC\s+
+ syn match rplCommand +#$CHANGE$+
+ syn match rplCommand +#$CHANGE\s+
+ syn match rplCommand +#$CLRSCR$+
+ syn match rplCommand +#$CLRSCR\s+
+ syn match rplCommand +#$CMPVER$+
+ syn match rplCommand +#$CMPVER\s+
+ syn match rplCommand +#$CMPWA$+
+ syn match rplCommand +#$CMPWA\s+
+ syn match rplCommand +#$CMPWAW$+
+ syn match rplCommand +#$CMPWAW\s+
+ syn match rplCommand +#$COLRNG$+
+ syn match rplCommand +#$COLRNG\s+
+ syn match rplCommand +#$CONCAT$+
+ syn match rplCommand +#$CONCAT\s+
+ syn match rplCommand +#$COPY$+
+ syn match rplCommand +#$COPY\s+
+ syn match rplCommand +#$COPYLN$+
+ syn match rplCommand +#$COPYLN\s+
+ syn match rplCommand +#$CURSOR$+
+ syn match rplCommand +#$CURSOR\s+
+ syn match rplCommand +#$DB$+
+ syn match rplCommand +#$DB\s+
+ syn match rplCommand +#$DEFCFG$+
+ syn match rplCommand +#$DEFCFG\s+
+ syn match rplCommand +#$DEL$+
+ syn match rplCommand +#$DEL\s+
+ syn match rplCommand +#$DELC$+
+ syn match rplCommand +#$DELC\s+
+ syn match rplCommand +#$DO$+
+ syn match rplCommand +#$DO\s+
+ syn match rplCommand +#$DOSAM$+
+ syn match rplCommand +#$DOSAM\s+
+ syn match rplCommand +#$DQCMD$+
+ syn match rplCommand +#$DQCMD\s+
+ syn match rplCommand +#$EAMATR$+
+ syn match rplCommand +#$EAMATR\s+
+ syn match rplCommand +#$EDIT$+
+ syn match rplCommand +#$EDIT\s+
+ syn match rplCommand +#$ENTER$+
+ syn match rplCommand +#$ENTER\s+
+ syn match rplCommand +#$ER$+
+ syn match rplCommand +#$ER\s+
+ syn match rplCommand +#$ERP$+
+ syn match rplCommand +#$ERP\s+
+ syn match rplCommand +#$ERR$+
+ syn match rplCommand +#$ERR\s+
+ syn match rplCommand +#$EXCHAP$+
+ syn match rplCommand +#$EXCHAP\s+
+ syn match rplCommand +#$EXIT$+
+ syn match rplCommand +#$EXIT\s+
+ syn match rplCommand +#$EXLINK$+
+ syn match rplCommand +#$EXLINK\s+
+ syn match rplCommand +#$EXPROP$+
+ syn match rplCommand +#$EXPROP\s+
+ syn match rplCommand +#$FDEL$+
+ syn match rplCommand +#$FDEL\s+
+ syn match rplCommand +#$FHS$+
+ syn match rplCommand +#$FHS\s+
+ syn match rplCommand +#$FIND$+
+ syn match rplCommand +#$FIND\s+
+ syn match rplCommand +#$FINDREV$+
+ syn match rplCommand +#$FINDREV\s+
+ syn match rplCommand +#$FINDW$+
+ syn match rplCommand +#$FINDW\s+
+ syn match rplCommand +#$FIRST$+
+ syn match rplCommand +#$FIRST\s+
+ syn match rplCommand +#$FIRSTL$+
+ syn match rplCommand +#$FIRSTL\s+
+ syn match rplCommand +#$FORM$+
+ syn match rplCommand +#$FORM\s+
+ syn match rplCommand +#$FREELN$+
+ syn match rplCommand +#$FREELN\s+
+ syn match rplCommand +#$FREVDEL$+
+ syn match rplCommand +#$FREVDEL\s+
+ syn match rplCommand +#$GENC$+
+ syn match rplCommand +#$GENC\s+
+ syn match rplCommand +#$GENP$+
+ syn match rplCommand +#$GENP\s+
+ syn match rplCommand +#$GET$+
+ syn match rplCommand +#$GET\s+
+ syn match rplCommand +#$GETCFG$+
+ syn match rplCommand +#$GETCFG\s+
+ syn match rplCommand +#$GETID$+
+ syn match rplCommand +#$GETID\s+
+ syn match rplCommand +#$GETLNUM$+
+ syn match rplCommand +#$GETLNUM\s+
+ syn match rplCommand +#$GETP$+
+ syn match rplCommand +#$GETP\s+
+ syn match rplCommand +#$GETTN$+
+ syn match rplCommand +#$GETTN\s+
+ syn match rplCommand +#$GETWD$+
+ syn match rplCommand +#$GETWD\s+
+ syn match rplCommand +#$GO$+
+ syn match rplCommand +#$GO\s+
+ syn match rplCommand +#$HALT$+
+ syn match rplCommand +#$HALT\s+
+ syn match rplCommand +#$IF$+
+ syn match rplCommand +#$IF\s+
+ syn match rplCommand +#$INCHAP$+
+ syn match rplCommand +#$INCHAP\s+
+ syn match rplCommand +#$INDOC$+
+ syn match rplCommand +#$INDOC\s+
+ syn match rplCommand +#$INFORM$+
+ syn match rplCommand +#$INFORM\s+
+ syn match rplCommand +#$INLINK$+
+ syn match rplCommand +#$INLINK\s+
+ syn match rplCommand +#$INPROP$+
+ syn match rplCommand +#$INPROP\s+
+ syn match rplCommand +#$INSERT$+
+ syn match rplCommand +#$INSERT\s+
+ syn match rplCommand +#$IQTAB$+
+ syn match rplCommand +#$IQTAB\s+
+ syn match rplCommand +#$ISALIAS$+
+ syn match rplCommand +#$ISALIAS\s+
+ syn match rplCommand +#$ISCHAP$+
+ syn match rplCommand +#$ISCHAP\s+
+ syn match rplCommand +#$ISCMD$+
+ syn match rplCommand +#$ISCMD\s+
+ syn match rplCommand +#$ISPEX$+
+ syn match rplCommand +#$ISPEX\s+
+ syn match rplCommand +#$ISTYPE$+
+ syn match rplCommand +#$ISTYPE\s+
+ syn match rplCommand +#$LCHAPS$+
+ syn match rplCommand +#$LCHAPS\s+
+ syn match rplCommand +#$LCMDS$+
+ syn match rplCommand +#$LCMDS\s+
+ syn match rplCommand +#$LFDEL$+
+ syn match rplCommand +#$LFDEL\s+
+ syn match rplCommand +#$LFIND$+
+ syn match rplCommand +#$LFIND\s+
+ syn match rplCommand +#$LFINDW$+
+ syn match rplCommand +#$LFINDW\s+
+ syn match rplCommand +#$LSREV\s+
+ syn match rplCommand +#$LSREV$+
+ syn match rplCommand +#$LXFDEL$+
+ syn match rplCommand +#$LXFDEL\s+
+ syn match rplCommand +#$LDOCS$+
+ syn match rplCommand +#$LDOCS\s+
+ syn match rplCommand +#$LEN$+
+ syn match rplCommand +#$LEN\s+
+ syn match rplCommand +#$LIST$+
+ syn match rplCommand +#$LIST\s+
+ syn match rplCommand +#$LISTCFG$+
+ syn match rplCommand +#$LISTCFG\s+
+ syn match rplCommand +#$LISTP$+
+ syn match rplCommand +#$LISTP\s+
+ syn match rplCommand +#$LLINKS$+
+ syn match rplCommand +#$LLINKS\s+
+ syn match rplCommand +#$LMS$+
+ syn match rplCommand +#$LMS\s+
+ syn match rplCommand +#$LOAD$+
+ syn match rplCommand +#$LOAD\s+
+ syn match rplCommand +#$LOADP$+
+ syn match rplCommand +#$LOADP\s+
+ syn match rplCommand +#$LOCK$+
+ syn match rplCommand +#$LOCK\s+
+ syn match rplCommand +#$LPUTLN$+
+ syn match rplCommand +#$LPUTLN\s+
+ syn match rplCommand +#$GQTAB$+
+ syn match rplCommand +#$GQTAB\s+
+ syn match rplCommand +#$LQTAB$+
+ syn match rplCommand +#$LQTAB\s+
+ syn match rplCommand +#$LSALL$+
+ syn match rplCommand +#$LSALL\s+
+ syn match rplCommand +#$MAKE$+
+ syn match rplCommand +#$MAKE\s+
+ syn match rplCommand +#$MAKEG$+
+ syn match rplCommand +#$MAKEG\s+
+ syn match rplCommand +#$MATRIX$+
+ syn match rplCommand +#$MATRIX\s+
+ syn match rplCommand +#$MAPPUT$+
+ syn match rplCommand +#$MAPPUT\s+
+ syn match rplCommand +#$MAPGET$+
+ syn match rplCommand +#$MAPGET\s+
+ syn match rplCommand +#$MGET$+
+ syn match rplCommand +#$MGET\s+
+ syn match rplCommand +#$PUTWD$+
+ syn match rplCommand +#$PUTWD\s+
+ syn match rplCommand +#$XMGET$+
+ syn match rplCommand +#$XMGET\s+
+ syn match rplCommand +#$MKALIAS$+
+ syn match rplCommand +#$MKALIAS\s+
+ syn match rplCommand +#$MOVE$+
+ syn match rplCommand +#$MOVE\s+
+ syn match rplCommand +#$LOGON$+
+ syn match rplCommand +#$LOGON\s+
+ syn match rplCommand +#$MOVELOG$+
+ syn match rplCommand +#$MOVELOG\s+
+ syn match rplCommand +#$MPUT$+
+ syn match rplCommand +#$MPUT\s+
+ syn match rplCommand +#$XMPUT$+
+ syn match rplCommand +#$XMPUT\s+
+ syn match rplCommand +#$N2CHART$+
+ syn match rplCommand +#$N2CHART\s+
+ syn match rplCommand +#$NEXT$+
+ syn match rplCommand +#$NEXT\s+
+ syn match rplCommand +#$NEXTL$+
+ syn match rplCommand +#$NEXTL\s+
+ syn match rplCommand +#$NOCMD$+
+ syn match rplCommand +#$NOCMD\s+
+ syn match rplCommand +#$NOP$+
+ syn match rplCommand +#$NOP\s+
+ syn match rplCommand +#$NOPNR$+
+ syn match rplCommand +#$NOPNR\s+
+ syn match rplCommand +#$NOVCMD$+
+ syn match rplCommand +#$NOVCMD\s+
+ syn match rplCommand +#$OPENLST$+
+ syn match rplCommand +#$OPENLST\s+
+ syn match rplCommand +#$OPER$+
+ syn match rplCommand +#$OPER\s+
+ syn match rplCommand +#$OPTION$+
+ syn match rplCommand +#$OPTION\s+
+ syn match rplCommand +#$OUTSCR$+
+ syn match rplCommand +#$OUTSCR\s+
+ syn match rplCommand +#$PANEL$+
+ syn match rplCommand +#$PANEL\s+
+ syn match rplCommand +#$PATH$+
+ syn match rplCommand +#$PATH\s+
+ syn match rplCommand +#$POS$+
+ syn match rplCommand +#$POS\s+
+ syn match rplCommand +#$PRE$+
+ syn match rplCommand +#$PRE\s+
+ syn match rplCommand +#$PREFIX$+
+ syn match rplCommand +#$PREFIX\s+
+ syn match rplCommand +#$LPREFIX$+
+ syn match rplCommand +#$LPREFIX\s+
+ syn match rplCommand +#$PRINT$+
+ syn match rplCommand +#$PRINT\s+
+ syn match rplCommand +#$PRL$+
+ syn match rplCommand +#$PRL\s+
+ syn match rplCommand +#$PROC$+
+ syn match rplCommand +#$PROC\s+
+ syn match rplCommand +#$PROFILE$+
+ syn match rplCommand +#$PROFILE\s+
+ syn match rplCommand +#$PROMPTL$+
+ syn match rplCommand +#$PROMPTL\s+
+ syn match rplCommand +#$PROT$+
+ syn match rplCommand +#$PROT\s+
+ syn match rplCommand +#$PSHNEXT$+
+ syn match rplCommand +#$PSHNEXT\s+
+ syn match rplCommand +#$PUTL$+
+ syn match rplCommand +#$PUTL\s+
+ syn match rplCommand +#$PUTLN$+
+ syn match rplCommand +#$PUTLN\s+
+ syn match rplCommand +#$PUTP$+
+ syn match rplCommand +#$PUTP\s+
+ syn match rplCommand +#$PUTPC$+
+ syn match rplCommand +#$PUTPC\s+
+ syn match rplCommand +#$PWDSTAT$+
+ syn match rplCommand +#$PWDSTAT\s+
+ syn match rplCommand +#$QRY$+
+ syn match rplCommand +#$QRY\s+
+ syn match rplCommand +#$QUIT$+
+ syn match rplCommand +#$QUIT[ \t]+
+ syn match rplCommand +#$READ$+
+ syn match rplCommand +#$READ\s+
+ syn match rplCommand +#$REDLN$+
+ syn match rplCommand +#$REDLN\s+
+ syn match rplCommand +#$REGEX$+
+ syn match rplCommand +#$REGEX\s+
+ syn match rplCommand +#$REMOVE$+
+ syn match rplCommand +#$REMOVE\s+
+ syn match rplCommand +#$REN$+
+ syn match rplCommand +#$REN\s+
+ syn match rplCommand +#$RMALIAS$+
+ syn match rplCommand +#$RMALIAS\s+
+ syn match rplCommand +#$RPATH$+
+ syn match rplCommand +#$RPATH\s+
+ syn match rplCommand +#$RSAM$+
+ syn match rplCommand +#$RSAM\s+
+ syn match rplCommand +#$SALL$+
+ syn match rplCommand +#$SALL\s+
+ syn match rplCommand +#$SCFG$+
+ syn match rplCommand +#$SCFG\s+
+ syn match rplCommand +#$SCP$+
+ syn match rplCommand +#$SCP\s+
+ syn match rplCommand +#$SCRUPD$+
+ syn match rplCommand +#$SCRUPD\s+
+ syn match rplCommand +#$SDC$+
+ syn match rplCommand +#$SDC\s+
+ syn match rplCommand +#$SDCAC$+
+ syn match rplCommand +#$SDCAC\s+
+ syn match rplCommand +#$SDCP$+
+ syn match rplCommand +#$SDCP\s+
+ syn match rplCommand +#$SDCPC$+
+ syn match rplCommand +#$SDCPC\s+
+ syn match rplCommand +#$SELDB$+
+ syn match rplCommand +#$SELDB\s+
+ syn match rplCommand +#$SELCFG$+
+ syn match rplCommand +#$SELCFG\s+
+ syn match rplCommand +#$SEND$+
+ syn match rplCommand +#$SEND\s+
+ syn match rplCommand +#$SENDCL$+
+ syn match rplCommand +#$SENDCL\s+
+ syn match rplCommand +#$SHOWCHP$+
+ syn match rplCommand +#$SHOWCHP\s+
+ syn match rplCommand +#$SHOWCMD$+
+ syn match rplCommand +#$SHOWCMD\s+
+ syn match rplCommand +#$SHOWDB$+
+ syn match rplCommand +#$SHOWDB\s+
+ syn match rplCommand +#$SHOWDOC$+
+ syn match rplCommand +#$SHOWDOC\s+
+ syn match rplCommand +#$SHOWLNK$+
+ syn match rplCommand +#$SHOWLNK\s+
+ syn match rplCommand +#$SHOWSTK$+
+ syn match rplCommand +#$SHOWSTK\s+
+ syn match rplCommand +#$SLEEP$+
+ syn match rplCommand +#$SLEEP\s+
+ syn match rplCommand +#$SLI$+
+ syn match rplCommand +#$SLI\s+
+ syn match rplCommand +#$SLIAC$+
+ syn match rplCommand +#$SLIAC\s+
+ syn match rplCommand +#$SORT$+
+ syn match rplCommand +#$SORT\s+
+ syn match rplCommand +#$SPATH$+
+ syn match rplCommand +#$SPATH\s+
+ syn match rplCommand +#$SREV$+
+ syn match rplCommand +#$SREV\s+
+ syn match rplCommand +#$STATE$+
+ syn match rplCommand +#$STATE\s+
+ syn match rplCommand +#$STR$+
+ syn match rplCommand +#$STR\s+
+ syn match rplCommand +#$STRL$+
+ syn match rplCommand +#$STRL\s+
+ syn match rplCommand +#$SUB1$+
+ syn match rplCommand +#$SUB1\s+
+ syn match rplCommand +#$SUBST$+
+ syn match rplCommand +#$SUBST\s+
+ syn match rplCommand +#$SUFFIX$+
+ syn match rplCommand +#$SUFFIX\s+
+ syn match rplCommand +#$LSUFFIX$+
+ syn match rplCommand +#$LSUFFIX\s+
+ syn match rplCommand +#$SWALIAS$+
+ syn match rplCommand +#$SWALIAS\s+
+ syn match rplCommand +#$TRANSV$+
+ syn match rplCommand +#$TRANSV\s+
+ syn match rplCommand +#$TRANSCC$+
+ syn match rplCommand +#$TRANSCC\s+
+ syn match rplCommand +#$UNLOAD$+
+ syn match rplCommand +#$UNLOAD\s+
+ syn match rplCommand +#$WARN$+
+ syn match rplCommand +#$WARN\s+
+ syn match rplCommand +#$WASTATE$+
+ syn match rplCommand +#$WASTATE\s+
+ syn match rplCommand +#$WINDOW$+
+ syn match rplCommand +#$WINDOW\s+
+ syn match rplCommand +#$WRITE$+
+ syn match rplCommand +#$WRITE\s+
+ syn match rplCommand +#$WSAM$+
+ syn match rplCommand +#$WSAM\s+
+ syn match rplCommand +#$XDEL$+
+ syn match rplCommand +#$XDEL\s+
+ syn match rplCommand +#$XDELC$+
+ syn match rplCommand +#$XDELC\s+
+ syn match rplCommand +#$XFDEL$+
+ syn match rplCommand +#$XFDEL\s+
+
+ syn match rplCommand +BEGIN-DATA$+
+ syn match rplCommand +BEGIN-DATA\s+
+ syn match rplCommand +END-DATA$+
+ syn match rplCommand +END-DATA\s+
+
+ syn match rplConditional +IF$+
+ syn match rplConditional +IF\s+
+ syn match rplConditional +ELSE$+
+ syn match rplConditional +ELSE\s+
+ syn match rplConditional +SWITCH$+
+ syn match rplConditional +SWITCH\s+
+ syn match rplConditional +CASE$+
+ syn match rplConditional +CASE\s+
+
+ syn match rplRepeat +FOR$+
+ syn match rplRepeat +FOR\s+
+ syn match rplRepeat +WHILE$+
+ syn match rplRepeat +WHILE\s+
+ syn match rplRepeat +REPEAT$+
+ syn match rplRepeat +REPEAT\s+
+ syn match rplRepeat +BREAK$+
+ syn match rplRepeat +BREAK\s+
+ syn match rplRepeat +NEXT$+
+ syn match rplRepeat +NEXT\s+
+
+syn case match
+
+"TODO zwischen BEGIN-DATA und END-DATA als Data anzeigen
+
+" comments
+syn match rplComment " ;.*" contains=rplTodo
+syn match rplComment "^;.*" contains=rplTodo
+
+" wrong global variable usage
+syn match rplWrongGlobals " :[^ :][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ \t]\+"
+
+" wrong local variables
+syn match rplWrongLocals " [: ][aA][rR][gG][^ ][^ ][^ ][^ ][^ ][^ \t]\+"
+
+" too long exit code
+syn match rplWrongExit "\#\$[Ee][Xx][Ii][Tt] [ ]*[^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ \t]\+"
+
+" highlighting
+hi link rplComment     Comment
+hi link rplTodo        Todo
+hi link rplCommand     Statement
+hi link rplConditional Conditional
+hi link rplRepeat      Repeat
+hi link rplData        PreProc
+hi link rplParenError  Error
+hi link rplWrongLocals Error
+hi link rplWrongGlobals Error
+hi link rplWrongExit Error
+
+"syn sync maxlines=1500
+"syn sync minlines=300
+
+let b:current_syntax = "rpl"
